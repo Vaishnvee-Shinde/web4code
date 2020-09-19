@@ -1,0 +1,650 @@
+<html>
+<head>
+<title> c programming </title>
+<link rel="stylesheet" href="style.css">
+ <meta name="viewport"
+        content="width=device-width, initial-scale=1"> 
+      
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+    <style> 
+          
+        /* styling navlist */ 
+        #navlist { 
+            background-color: #357EC7; 
+            position: absolute; 
+            width: 100%; 
+        } 
+          
+        /* styling navlist anchor element */ 
+        #navlist a { 
+            float:left; 
+            display: block; 
+            color: #f2f2f2; 
+            text-align: center; 
+            padding: 12px; 
+            text-decoration: none; 
+            font-size: 15px; 
+        } 
+        .navlist-right{ 
+            float:right; 
+        } 
+  
+        /* hover effect of navlist anchor element */ 
+        #navlist a:hover { 
+            background-color:#ddd; 
+            color: black; 
+        } 
+          
+        /* styling search bar */ 
+        .search input[type=text]{ 
+            width:300px; 
+            height:25px; 
+            border-radius:25px; 
+            border: none; 
+  
+        } 
+          
+        .search{ 
+            float:right; 
+            margin:7px; 
+  
+        } 
+          
+        .search button{ 
+            background-color: #0074D9; 
+            color: #f2f2f2; 
+            float: right; 
+            padding: 5px 10px; 
+            margin-right: 16px; 
+            font-size: 12px; 
+            border: none; 
+            cursor: pointer; 
+        }  
+    </style> 
+</head> 
+  
+<body> 
+      
+    <!-- Navbar items -->
+    <div id="navlist"> 
+        <a href="E:\web page\website\webpage1.html">Home</a> 
+        <a href="#">Our Products</a> 
+        <a href="#">Careers</a> 
+        <a href="#">About Us</a> 
+        <a href="#">Contact Us</a> 
+          
+        <!-- seach bar right align -->
+        <div class="search"> 
+              
+            <form action="#"> 
+                <input type="text"
+                    placeholder=" Search Courses"
+                    name="search"> 
+                <button> 
+                    <i class="fa fa-search"
+                        style="font-size: 18px;"> 
+                    </i> 
+                </button> 
+            </form> 
+        </div> 
+    </div> 
+      
+
+<style="margin:0px;">
+    <table style="width:100%; border-collapse:collapse; font:14px Arial,sans-serif;">
+        <tr colspan="2">
+            <td background="E:\web page\images\galaxy4.jpg"width=1500px,height=100px>style="padding:20px 20px; background-color: #3B3131">
+<img src="E:\web page\images\user icon.png"aline="left"width="50";height="50">
+
+<h1 style="font-size:24px;color:white;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font face = "Comic sans MS" size =" 6"> <b>OPERATORS IN C</b> <br></font><br /></h1>
+
+           </td>
+<td background="E:\web page\images\galaxy4.jpg"width=3500px></td>
+        </tr>
+
+
+<tr style="height:170px;">
+            <td style="width:80%; padding:20px; vertical-align: top;">
+                <font face = "Comic sans MS" size =" 6"> <b>operators</b> <br></font><br />
+An operator is a symbol that tells the compiler to perform specific mathematical or logical functions. C language is rich in built-in operators and provides
+ the following types of operators- <br>
+
+1)Arithmetic Operators<br>
+2)Relational Operators<br>
+3)Logical Operators<br>
+4)Bitwise Operators<br>
+5)Assignment Operators<br>
+6)Misc Operators<br><br>
+
+
+
+  <font face = "Comic sans MS" size =" 5">||Arithmetic Operators|| <br></font><br />
+An arithmetic operator performs mathematical operations such as addition, subtraction, multiplication, division etc on numerical values (constants and variables)
+.<br><br>
+<table border="1">
+<tr>
+<th>operator</th>
+<th>meaning of operator</th>
+</tr>
+<tr>
+<td> + </td>
+<td>addition or unary plus  </td>
+</tr>
+<tr>
+<td> - </td>
+<td>subtraction or unary minus  </td>
+</tr>
+<tr>
+<td> * </td>
+<td>multiplication  </td>
+</tr>
+<tr>
+<td> / </td>
+<td>division </td>
+</tr>
+<tr>
+<td> %</td>
+<td>remainder after division (modulo division)  </td>
+</tr><br></p>
+</table>
+
+<h4>example arithmetic operators</h4>
+<fieldset style="background-color:#E6E6FA;">
+#include <<stdio.h>stdio.h><br>
+int main()<br>
+{<br>
+    int a = 9,b = 4, c;<br>
+    
+    c = a+b;<br>
+    printf("a+b = %d \n",c);<br>
+    c = a-b;<br>
+    printf("a-b = %d \n",c);<br>
+    c = a*b;<br>
+    printf("a*b = %d \n",c);<br>
+    c = a/b;<br>
+    printf("a/b = %d \n",c);<br>
+    c = a%b;<br>
+    printf("Remainder when a divided by b = %d \n",c);<br>
+    
+    return 0;<br>
+}<br>
+</fieldset>
+<h4>Output</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+a+b = 13<br>
+a-b = 5<br>
+a*b = 36<br>
+a/b = 2<br>
+
+Remainder when a divided by b=1<br>
+</fieldset><br>
+
+
+
+  <font face = "Comic sans MS" size =" 5">|| Increment Decrement Operators||
+ <br></font><br />
+
+<p>C programming has two operators increment ++ and decrement -- to change the value of an operand (constant or variable) by 1.<br>
+Increment ++ increases the value by 1 whereas decrement -- decreases the value by 1. These two operators are unary operators, meaning they only operate 
+on a single operand.<br>
+<h4>example of increment and decrement operators</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+#include <<stdio.h>stdio.h><br>
+int main()<br>
+{<br>
+    int a = 10, b = 100;<br>
+    float c = 10.5, d = 100.5;<br>
+
+    printf("++a = %d \n", ++a);<br>
+    printf("--b = %d \n", --b);<br>
+    printf("++c = %f \n", ++c);<br>
+    printf("--d = %f \n", --d);<br>
+
+    return 0;<br>
+}
+</fieldset>
+<h4>Output</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+++a = 11<br>
+--b = 99<br>
+++c = 11.500000<br>
+++d = 99.500000<br>
+</fieldset><br>
+Here, the operators ++ and -- are used as prefixes. These two operators can also be used as postfixes like a++ and a--. 
+Visit this page to learn more about how increment and decrement operators work when used as postfix.<br><br><br>
+
+
+ <font face = "Comic sans MS" size =" 5">||  C Assignment Operators||
+ <br></font><br />
+An assignment operator is used for assigning a value to a variable. The most common assignment operator is =<br><br>
+
+
+<h4>example of relational operators</h2><br>
+<fieldset style="background-color:#E6E6FA;">
+#include <<stdio.h>stdio.h><br>
+int main()<br>
+{<br>
+    int a = 5, b = 5, c = 10;<br>
+
+    printf("%d == %d is %d \n", a, b, a == b);<br>
+    printf("%d == %d is %d \n", a, c, a == c);<br>
+    printf("%d > %d is %d \n", a, b, a > b);<br>
+    printf("%d > %d is %d \n", a, c, a > c);<br>
+    printf("%d < %d is %d \n", a, b, a < b);<br>
+    printf("%d < %d is %d \n", a, c, a < c);<br>
+    printf("%d != %d is %d \n", a, b, a != b);<br>
+    printf("%d != %d is %d \n", a, c, a != c);<br>
+    printf("%d >= %d is %d \n", a, b, a >= b);<br>
+    printf("%d >= %d is %d \n", a, c, a >= c);<br>
+    printf("%d <= %d is %d \n", a, b, a <= b);<br>
+    printf("%d <= %d is %d \n", a, c, a <= c);<br>
+
+    return 0;<br>
+}<br>
+</fieldset>
+
+<h4>Output</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+5 == 5 is 1<br>
+5 == 10 is 0<br>
+5 > 5 is 0<br>
+5 > 10 is 0<br>
+5 < 5 is 0<br>
+5 < 10 is 1<br>
+5 != 5 is 0<br>
+5 != 10 is 1<br>
+5 >= 5 is 1<br>
+5 >= 10 is 0<br>
+5 <= 5 is 1<br>
+5 <= 10 is 1 <br>
+</fieldset><br><br>
+
+
+
+ <font face = "Comic sans MS" size =" 5">||Logical Operators||
+ <br></font><br />
+
+An expression containing logical operator returns either 0 or 1 depending upon whether expression results true or false.
+ Logical operators are commonly used in decision making in C programming<br><br><br>
+<table border="1">
+<tr>
+<th>operator</th>
+<th> meaning</th>
+<th>example</th>
+</tr>
+<tr>
+<th>&&</th>
+<th> &nbsp&nbsp&nbspLogical AND. True only if all operands are true</th>
+<th>&nbsp&nbsp&nbspIf c = 5 and d = 2 then, expression ((c==5) && (d>5)) equals to 0</th>
+</tr>
+<tr>
+<th>||</th>
+<th> &nbsp&nbsp&nbsp&nbspLogical OR. True only if either one operand is true</th>
+<th>&nbsp&nbsp&nbsp&nbspIf c = 5 and d = 2 then, expression ((c==5) || (d>5)) equals to 1.</th>
+</tr>
+<tr>
+<th>!</th>
+<th> &nbsp&nbsp&nbsp&nbspLogical NOT. True only if the operand is 0	</th>
+<th>&nbsp&nbsp&nbsp&nbspIf c = 5 then, expression !(c==5) equals to 0.</th>
+</tr>
+</table>
+
+<h4>example of logical operators</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+#include <<stdio.h>stdio.h><br>
+int main()<br>
+{<br>
+    int a = 5, b = 5, c = 10, result;<br>
+
+    result = (a == b) && (c > b);<br>
+    printf("(a == b) && (c > b) is %d \n", result);<br>
+    result = (a == b) && (c < b);<br>
+    printf("(a == b) && (c < b) is %d \n", result);<br>
+    result = (a == b) || (c < b);<br>
+    printf("(a == b) || (c < b) is %d \n", result);<br>
+    result = (a != b) || (c < b);<br>
+    printf("(a != b) || (c < b) is %d \n", result);<br>
+    result = !(a != b);<br>
+    printf("!(a == b) is %d \n", result);<br>
+    result = !(a == b);<br>
+    printf("!(a == b) is %d \n", result);<br>
+
+    return 0;<br>
+}<br>
+</fieldset>
+<h4>Output</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+(a == b) && (c > b) is 1 <br>
+(a == b) && (c < b) is 0 <br>
+(a == b) || (c < b) is 1 <br>
+(a != b) || (c < b) is 0 <br>
+!(a != b) is 1 <br>
+!(a == b) is 0 <br>
+</fieldset><br><br>
+
+
+
+
+ <font face = "Comic sans MS" size =" 5">||Bitwise Operators||
+ <br></font><br />
+
+During computation, mathematical operations like: addition, subtraction, multiplication, division, etc are 
+converted to bit-level which makes processing faster and saves power.<br>
+Bitwise operators are used in C programming to perform bit-level operations.<br><br><br><br>
+<table border="1">
+<tr>
+<th>operator</th>
+<th>meaning of operator</th>
+</tr>
+<tr>
+<th>&</th>
+<th>Bitwise ANDr</th>
+</tr>
+<tr>
+<th>|</th>
+<th>Bitwise OR</th>
+</tr>
+<tr>
+<th>^</th>
+<th>Bitwise exclusive OR</th>
+</tr>
+<tr>
+<th>~</th>
+<th>Bitwise complement</th>
+</tr>
+<tr>
+<th><<</th>
+<th>Shift left</th>
+</tr>
+<tr>
+<th>>></th>
+<th>Shift right</th>
+</tr>
+</table><br><br>
+
+
+
+ <font face = "Comic sans MS" size =" 5">||Conditional operator||
+ <br></font><br />
+
+	<p>The conditional operator contains a condition followed by two statements or values.
+	If the condition is true the first statement is executed, otherwise the second statement or value.
+<h4>Syntax</h4><br>
+
+<fieldset style="background-color:#E6E6FA;">>
+condition ? (value 1) : (value 2)<br>
+</fieldset>
+<h4>How Conditional Operator Works</h4><br>
+Conditional operator performs nothing more special. It is the abstraction of if else statement. Consider the following example how Condtional Operator works<br>
+younger = true ? 18 : 40;<br>
+If the logical expression resulted true, 18 will be stored in a variable younger.<br>
+younger = false ? 18 : 40;<br>
+If the logical expression resulted true, 40 will be stored in a variable younger.<br>
+<h4>example of conditional operator</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+#include <stdio.h> <br>
+  int main() <br>
+{ <br>
+    // variable declaration <br>
+    int n1 = 5, n2 = 10, max; <br>
+   // Largest among n1 and n2 <br>
+    max = (n1 > n2) ? n1 : n2; <br>
+   // Print the largest number <br>
+    printf("Largest number between"<br>
+           " %d and %d is %d. ",<br> 
+           n1, n2, max); <br>
+  return 0; <br>
+} <br>
+</fieldset><br>
+<h4>Output:</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+Largest number between 5 and 10 is 10.<br>
+</fieldset></p><br>
+
+
+
+
+
+ <font face = "Comic sans MS" size =" 5">||Scope Resolution Operator||
+ <br></font><br />
+<p>Scope Resolution operator tells the compiler to use global variable instead of local variable. A variable followed by scope Resolution
+ operator must be initialized globally. Scope Resolution operator is represented by the symbol ::.
+program
+Unfortunately, C programming doesn't support scope resolution operator. So by making using C Plus Plus with an extention .
+cpp to learn scope resolution operator for future use.<br></p><br>
+
+
+
+ <font face = "Comic sans MS" size =" 5">||Operator Precedence In C||
+ <br></font><br />
+
+<h4>Why Operator Precedence?</h4>
+<p>Every Operator have their own precedence because without operator precedence a complier will conflict with data when performing mathematical calculations.<br>
+Example<br>
+Consider the following expression 6 - 4 + 8 without operator precedence compiler is helpless to choose which operator needs to execute first.
+ Thus Operator Precedence helps compiler out there.
+The following table lists all C operators and their precedence from higher priority to lower priority.<br>
+The following table lists all C operators and their precedence from higher priority to lower priority<br><br>
+<table border="1">
+<tr>
+<th>symbol</th>
+<th>name</th>
+<th>precedence</th>
+</tr>
+<tr>
+<th>()</th>
+<th>Function call</th>
+<th>Left to Right</th>
+</tr>
+<tr>
+<th>[ ]	</th>
+<th>Array</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>→</th>
+<th>Structure Operator</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>.</th>
+<th>	Structure Operator</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>+</th>
+<th>Unary plus	</th>
+<th>	Right to Left</th>
+</tr>
+<tr>
+<th>-</th>
+<th>Unary minus</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>++</th>
+<th>Increment</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>--</th>
+<th>Decrement</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>!</th>
+<th>	Not Operator</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>~</th>
+<th>One's Complement</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>*</th>
+<th>Pointer Operation</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>&	</th>
+<th>Address Operator</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>sizeof</th>
+<th>Size of an data type</th>
+<th>right to left</th>
+</tr>
+<tr>
+<th>*	</th>
+<th>Multipication</th>
+<th>	Left to Right</th>
+</tr>
+<tr>
+<th>/	</th>
+<th>Division</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>%</th>
+<th>Modular Division</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>+	</th>
+<th>Addition</th>
+<th>	Left to Right</th>
+</tr>
+<tr>
+<th>-</th>
+<th>	Subtraction</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th><<</th>
+<th>	Left shift	</th>
+<th>Left to Right</th>
+</tr>
+<tr>
+<th>>>	</th>
+<th>Right shift</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th><</th>
+<th>Less than</th>
+<th>Left to Right</th>
+</tr>
+<tr>
+<th><=	</th>
+<th>Less than or equal to</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>>	</th>
+<th>Greater than</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>>=	</th>
+<th>Greater than or Equalto</th>
+<th>left to right</th>
+</tr>
+<tr>
+<th>=	</th>
+<th>Equality</th>
+<th>	Left to Right</th>
+</tr>
+<tr>
+<th>!=</th>
+<th>	InEquality</th>
+<th>left to right</th>
+</tr>
+</table>
+
+<h4>example</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+#include <stdio.h> //header file section<br>
+int main()<br>
+{<br>
+int a = 10, b = 10, c = 1, d = 5, r;<br>
+r = ++a + (++b) + b-- * (++c) + --d;<br>
+printf("The value of r = %d ", r);<br>
+return 0;<br>
+}<br>
+</fieldset>
+<h4>output</h4><br>
+<fieldset style="background-color:#E6E6FA;">
+	The value of r = 48
+</fieldset><br>
+<b>Note:</b><br>
+  Step 1: r = 11 + 11 + b-- * 2 + --d<br>
+  Step 2: r = 11 + 11 + 11 * 2 + 4<br>
+  Step 3: r = 11 + 11 + 22 + 4<br>
+  Step 4: r = 48.<br></p>
+
+ </td>
+           
+
+
+
+<!--right column -->
+ <td style="padding:5px; background-color:#43BFC7; vertical-align:top;">
+
+<marquee><font face = "Comic sans MS" size =" 4"> <b>EXAMPLES RELATED TO OPERATORS</b> <br></font><br /></marquee>
+ <ul style="list-style:none; padding:0px; line-height:50px;">
+                    <li><a href="#" style="color:#333;">Example 1</a></li>
+                    <li><a href="#" style="color:#333;">Example 2</a></li>
+                    <li><a href="#" style="color:#333;">Example 3</a></li>
+ <li><a href="#" style="color:#333;">Example 4</a></li>
+ <li><a href="#" style="color:#333;">Example 5</a></li>
+ <li><a href="#" style="color:#333;">Example 6</a></li>
+ <li><a href="#" style="color:#333;">Example 7</a></li>
+ <li><a href="#" style="color:#333;">Example 8</a></li>
+ <li><a href="#" style="color:#333;">Example 9</a></li>
+
+                </ul>
+                
+            </td>
+        </tr>
+       
+
+
+
+<!--  previous next home -->
+ <tr>
+            <td colspan="2" style="padding:10px; background-color:#708090;">
+<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="E:\web page\website\webpage6.html"> previous page </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp<a href="E:\web page\website\webpage8.html">next page>> </a>
+<hr><br>
+
+
+
+<form action="E:\web page\website\webpage1.html">
+<center><button type="submit">HOME</button></center>
+<form>              
+
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
